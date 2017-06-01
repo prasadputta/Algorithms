@@ -16,7 +16,7 @@ public class PrimeNumber {
 
     public static  void printPrimes(int n){
 
-        for (int i = 2;i<n;i++) {
+        for (int i = 2;i<=n;i++) {
                 checkPrime(i);
         }
     }
