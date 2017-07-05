@@ -18,6 +18,20 @@ public class StringManip {
         System.out.println("The new string is -->"+ str1);
     }
 
+    public void subtractString3(String str1,String str2){
+
+
+        StringTokenizer st = new StringTokenizer(str2);
+
+        while(st.hasMoreTokens()){
+            str1.replaceFirst(st.nextToken(),"");
+        }
+
+        System.out.println("The new string is -->"+ str1);
+    }
+
+
+
     /**
      * Replace the first occurance of the token
      */
@@ -121,12 +135,6 @@ public String reverseInplace(String inputStr){
         return true;
 
     }
-
-
-
-
-
-
 
 
     public static void main(String[] args){

@@ -15,7 +15,7 @@ public class Fibonnacci {
         return retVal;
     }
 
-    //Non recirsive version
+    //Non recursive version
     public long fibNonrecursive(long n){
         if(n <= 2) {
             return n;
@@ -35,7 +35,7 @@ public class Fibonnacci {
 
     public static void main(String args[]){
       //  System.out.println(new Fibonnacci().fib(45));
-        System.out.println(new Fibonnacci().fibNonrecursive(90));
+        System.out.println(new Fibonnacci().fibNonrecursive(10));
 
     }
 

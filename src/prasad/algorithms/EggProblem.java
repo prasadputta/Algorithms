@@ -62,7 +62,7 @@ public class EggProblem {
         FloorIncrement quadraticIncrement =(max)->{
             //an2+bn+c=0  c=max,a=1,b=1
             //-b+sqrt(b*b-2ac)/2a
-            double inc = (-1+Math.sqrt(1+4*1*max)/2);
+            double inc = ((-1+Math.sqrt(1+4*1*max))/2);
             System.out.println(inc);
             return ((int) inc);
         };
