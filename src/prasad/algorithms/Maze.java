@@ -58,6 +58,7 @@ public class Maze {
     }
 
 
+
     public static boolean solveMaze(int r,int c){
 
         //make sure that we are within the maze. if we are outside, just do not process any further
