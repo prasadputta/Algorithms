@@ -23,11 +23,11 @@ This program plays the game "Fizzbuzz".  It counts to 100, replacing each
 
         for(int i = 0;i<100;i++){
             if(i%5==0 && i%7 == 0){
-                System.out.println(i + " Fizz");
+                System.out.println(i + " FizzBuzz");
             }else if(i%5 == 0){
-                System.out.println(i + " Buzz");
+                System.out.println(i + " Fizz");
             }else if( i%7 == 0  ){
-                System.out.println(i + "FizzBuzz");
+                System.out.println(i + " Buzz");
 
             }else{
                 System.out.println(i);
@@ -79,7 +79,7 @@ This program plays the game "Fizzbuzz".  It counts to 100, replacing each
     public static void main(String[] args){
 
         Fizzbuzz f = new Fizzbuzz();
-       // f.fizzBuzz();
-        f.fizzBuzzgeAlternative();
+        f.fizzBuzz();
+        //f.fizzBuzzgeAlternative();
     }
 }

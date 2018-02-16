@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  */
  public  class FindDups {
     static void find(){
-      List<Integer> list = new ArrayList<>();
+      List<Integer> list;
         
       list = Arrays.asList(new Integer[]{33,22,4,44,33,23434,44,34,3,33,22,6,77,87,56,54,33,45});
 
@@ -26,11 +26,39 @@ import java.util.stream.Collectors;
 
   }
 
+    //here the approach is to load the list into a set and diff
+   static void find2(){
+       List<Integer> list;
 
+       list = Arrays.asList(new Integer[]{33,22,4,44,33,23434,44,34,3,33,22,6,77,87,56,54,33,45});
+        HashSet<Integer> uniques= new HashSet<>(list);
+       System.out.println(list.removeAll(uniques));
+
+   }
+
+
+    static void find9(){
+        int[] inputArray = {23,22,4,33,2,33,4,99,23};
+        HashSet<Integer> inputSet = new HashSet<>();
+
+
+        //if you can't add it to the set it is a dup
+
+        for(int i :inputArray){
+            if(!inputSet.add(i)){
+                System.out.println("DUP -->"+i);
+            }
+
+
+        }
+
+
+    }
 
 
     public static void main(String[] args) {
     find();
-
+   // find2();
+        find9();
     }
 }

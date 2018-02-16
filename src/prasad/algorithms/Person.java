@@ -1,9 +1,9 @@
-package practice.test;
+package prasad.algorithms;
 
-public class Problem4_Person extends Object{
+public class Person extends Object{
 
-    public Problem4_Person(String name, byte age, String address, String city,
-                           String state, short zip) {
+    public Person(String name, byte age, String address, String city,
+                  String state, short zip) {
         super();
         this.name = name;
         this.age = age;
@@ -29,7 +29,7 @@ public class Problem4_Person extends Object{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Problem4_Person that = (Problem4_Person) o;
+        Person that = (Person) o;
 
         if (age != that.age) return false;
         if (zip != that.zip) return false;

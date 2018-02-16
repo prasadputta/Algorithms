@@ -2,16 +2,25 @@ package prasad.algorithms;
 
 public class PrimeNumber {
 
-    public static void checkPrime(int n){
+    public static boolean checkPrime(int n){
+        if(n < 0){
+            System.out.println("Invalid Number");
+            return false;
+        }
 
-        for(int i = 2;i< n;i++){
+        if(n%2==0){
+           return false;
+       }
+
+        for(int i = 2;i< Math.sqrt(n);i+=2){
             if(n % i == 0){
                 System.out.println(n + " is NOT a prime!!");
-                return;
+                return false;
             }
         }
-        System.out.println(n + " is a PRIME!!");
 
+        System.out.println(n + " is a PRIME!!");
+        return true;
     }
 
     public static  void printPrimes(int n){
